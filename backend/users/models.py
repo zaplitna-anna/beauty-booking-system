@@ -1,5 +1,4 @@
 import uuid
-
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.core.validators import RegexValidator
@@ -34,6 +33,12 @@ class User(AbstractUser):
     email = models.EmailField(
         "Електронна пошта",
         unique=True
+    )
+
+    phone = models.CharField(
+        "Номер телефону",
+        max_length=13,
+        validators=[ua_phone_validator]
     )
 
     role = models.CharField(

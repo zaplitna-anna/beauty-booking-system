@@ -46,6 +46,12 @@ class User(AbstractUser):
         choices=Role.choices,
         default=Role.CLIENT
     )
+    
+    specialization = models.CharField(
+        "Спеціалізація",
+        max_length=150,
+        blank=True
+    )
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["name", "phone"]

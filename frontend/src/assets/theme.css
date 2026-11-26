@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+:root {
+    --main-color: #D99AAF;
+    --main-color-light: rgba(217, 154, 175, 0.15);
+    --dark-color: #85566D;
+    --light-bg: #FFF7FA;
+    --border-color: #EBD3DF;
+    --bs-primary: #D99AAF;
+    --bs-primary-rgb: 217, 154, 175;
+    --bs-link-color: #C17D98;
+    --bs-link-hover-color: #A96580;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-color);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: "Manrope", sans-serif;
+}
+
+a {
+    color: var(--bs-link-color);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #C17D98;
+    border-color: #C17D98;
+}
+
+.btn-outline-primary {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--main-color-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(217, 154, 175, 0.2);
+}
+
+.account-actions .btn-outline-primary {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all 0.25s ease;
+}
+
+.account-actions .btn-outline-primary:hover {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}
+
+.account-actions .btn-primary {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    transition: all 0.25s ease;
+}
+
+.account-actions .btn-primary:hover {
+    background-color: #C17D98;
+    color: white;
+    border-color: #C17D98;
+}
